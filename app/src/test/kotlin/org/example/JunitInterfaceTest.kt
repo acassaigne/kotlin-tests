@@ -9,7 +9,7 @@ abstract class ContractTestsForAdapter {
     abstract fun secondTest ();
 }
 
-class WithJunitTestOverAbstract : ContractTestsForAdapter() {
+class WithJunitTest : ContractTestsForAdapter() {
 
     @Test
     override fun firstTest() {
