@@ -4,11 +4,6 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 
-interface IContractTestsForAdapter {
-    abstract fun firstTest ();
-    abstract fun secondTest ();
-}
-
 class WithJunitTestOverInterface : IContractTestsForAdapter {
 
     @Test

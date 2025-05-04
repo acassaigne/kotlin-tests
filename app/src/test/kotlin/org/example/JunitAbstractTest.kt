@@ -4,11 +4,6 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 
-abstract class ContractTestsForAdapter {
-    abstract fun firstTest ();
-    abstract fun secondTest ();
-}
-
 class WithJunitTestOverAbstract : ContractTestsForAdapter() {
 
     @Test
