@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 
-abstract class ContractTestsForAdapter {
+interface IContractTestsForAdapter {
     abstract fun firstTest ();
     abstract fun secondTest ();
 }
 
-class WithJunitTest : ContractTestsForAdapter() {
+class WithJunitTestOverInterface : IContractTestsForAdapter {
 
     @Test
     override fun firstTest() {
@@ -20,4 +20,5 @@ class WithJunitTest : ContractTestsForAdapter() {
     override fun secondTest() {
         assertEquals("World!", "World!")
     }
+
 }
